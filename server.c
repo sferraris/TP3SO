@@ -10,7 +10,8 @@
 #define PORT 8080 
 #define LEVELS 13
 char *password[12] = {"entendido\n","itba\n","M4GFKZ289aku\n","fk3wfLCm3QvS\n","too_easy\n",".RUN_ME\n","K5n2UFfpFMUN\n","BUmyYq5XxXGt\n","u^v\n","chin_chu_lan_cha\n","gdb_rules\n","normal\n"};
-
+const int run_me __attribute__((section(".RUN_ME")));
+char *stringDes4 = "too_easy";
 void generateNormalNumbers(){
     int i;
     int m = 1000;
@@ -55,8 +56,8 @@ void desafio(int desafio) {
         case 1: printf("The Wire S1E5 \n5295 888 6288\n");break;
         case 2: printf("https://ibb.co/tc0Hb6w\n");break;
         case 3: printf("EBADF...\n\nwrite: Bad file descriptor\n");break; //WRITE STRACE
-        case 4: printf("respuesta = strings:277\n");break;
-        case 5: printf(".data .bss .comment ? .shstrtab .symtab .strtab\n");break;
+        case 4: printf("respuesta = strings:46\n");break;
+        case 5: printf(".data ? .bss .comment .shstrtab .symtab .strtab\n");break;
         case 6: printf("Work in progress\n");break; //FILTER
         case 7: printf("¿?\n\n\033[30mLa respuesta es BUmyYq5XxXGt\033[0m\n");break;
         case 8: printf("Latexme\nSi\n\\mathrm{d}y = u^v{\\cdot}(v'{\\cdot}\\ln{(u)}+v{\\cdot}\frac{u'}{u})\nentonces\ny =\n");break;
